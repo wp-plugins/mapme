@@ -1,9 +1,9 @@
 === Mapme ===
 Contributors: ramiy, mapme
-Tags: Mapme, embed, maps, map, community, shortcode, shortcodes
+Tags: Mapme, embed, map, maps, community, shortcode, shortcodes
 Requires at least: 3.5
-Tested up to: 4.1.1
-Stable tag: 1.0
+Tested up to: 4.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,21 +11,19 @@ Embed community maps from Mapme.com into your WordPress site
 
 == Description ==
 
-[Mapme.com](http://www.mapme.com) is a platform that empowers passionate people to build, launch and grow community maps.
+[Mapme.com](http://mapme.com) is a platform that empowers passionate people to build, launch and grow community maps.
 
-Using Mapme WordPress plugin you can embed your community maps from Mapme into your WordPress site.
+Using Mapme WordPress plugin you can embed your [community maps](http://mapme.com/content/maps/) from Mapme into your WordPress site.
 
 = Usage =
 
-To show community maps in your post, just use this shortcode:
+First you need to go to the plugin setting page at Setting->Mapme, to enter the map id.
 
-`[mapme id="sxsw"]`
+The plugin works with three basic shortcodes: `[mapme]`, `[mapme-list]` and `[mapme-info]`. You need to create three pages, each page containing one of the shortcodes.
 
-= Attributes =
-
-* id - Map id.
-* width - Map width.
-* height - Map height.
+* **[mapme]** - This shortcode is used the present the selected comunity map.
+* **[mapme-list]** - This shortcode is used to show the list of companies in the map.
+* **[mapme-info]** - If you want to show information about indevidual company, use this shortcode.
 
 == Installation ==
 
@@ -49,11 +47,22 @@ To show community maps in your post, just use this shortcode:
 * MySQL version 5.5 or greater.
 
 == Screenshots ==
-1. The shortcode in the text editor.
-2. The embedded map.
+2. Mapme settings page.
+2. The shortcode in the text editor.
+3. The embedded map in the front end.
 
 == Changelog ==
 
+= 1.1 (2015-05-11) =
+* Add i18n support.
+* Add hebrew (he_IL) traslation.
+* Add setting page.
+* Add [mapme-list] and [mapme-info] shortcodes.
+* Add company rewrite rules.
+* Auto generate companies pages using mapme API.
+* Add custom companies sitemap to "WordPress SEO by Yoast" plugin.
+* Add custom "meta" tags to companies auto-generated page.
+
 = 1.0 (2015-04-01) =
 * Initial release.
-* Mapme shortcode.
+* Register [mapme] shortcode.
