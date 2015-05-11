@@ -53,7 +53,7 @@ The plugin works with three basic shortcodes: `[mapme]`, `[mapme-list]` and `[ma
 
 == Changelog ==
 
-= 1.1 (2015-05-11) =
+= 1.1 (2015-05-12) =
 * Add i18n support.
 * Add hebrew (he_IL) traslation.
 * Add setting page.
